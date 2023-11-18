@@ -16,6 +16,13 @@ public class User {
 		this.project = project;
 	}
 	
+	public User( String username, String projectName, String project) {
+		
+		this.username = username;
+		this.projectName = projectName;
+		this.project = project;
+	}
+	
 	
 	public int getUser_id() {
 		return user_id;

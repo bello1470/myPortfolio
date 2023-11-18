@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Creative Design landing page.">
     <meta name="author" content="Devcrud">
-    <title>Homepage</title>
+    
+    <%
+    if(request.getAttribute("title") == null){
+    	out.print("<title>Homepage</title> ");
+    }else{
+    	out.print("<title>" + request.getAttribute("title") + "</title>");
+    }
+    
+    %>
+    
 
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
@@ -30,7 +39,10 @@
                         <a class="nav-link" href="<%=request.getContextPath()%>/Home?page=home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<%=request.getContextPath()%>/Home?page=listusers">Projects</a>
+                        <a class="nav-link" href="<%=request.getContextPath()%>/Site?page=listusers">Projects</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="<%=request.getContextPath()%>/Site?page=addusers">Add Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#features">Hire me!!!</a>

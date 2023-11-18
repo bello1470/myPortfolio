@@ -1,6 +1,6 @@
-<jsp:include page="include/Header.jsp">
-<jsp:param value="HomePage" name="titlePage"/>
-</jsp:include>
+<jsp:include page="include/Header.jsp"/>
+
+
 
 <h1>ERROR PAGE</h1>
 
