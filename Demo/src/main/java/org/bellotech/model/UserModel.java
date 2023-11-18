@@ -8,6 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import org.bellotech.DatabaseConfig;
 import org.bellotech.Entity.User;
 
@@ -97,6 +98,8 @@ public class UserModel {
 	}
 
 	public void deleteUser(int user_id) {
+
+		
 
 		Connection connect = null;
 		PreparedStatement stmt = null;
